@@ -26,16 +26,7 @@ if userText:
         {"messages": [{"role": "user", "content": f"{userText}"}]}
     )
     print(response)
-    st.write(response)
+    st.write(response["messages"][-1].content)
 
 
-
-
-
-
-# Set page configuration
-# st.set_page_config(page_title="AI ChatBot", layout="wide")
-
-# # Title
-# st.title("AI ChatBot")
 
