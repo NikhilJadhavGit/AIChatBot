@@ -26,7 +26,7 @@ if userText:
         {"messages": [{"role": "user", "content": f"{userText}"}]}
     )
     print(response)
-    st.write(response.content())
+    st.write(response)
 
 
 
